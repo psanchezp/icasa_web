@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mBAAoB;EAClB,MAAM,EAAE,gBAAgB",
+"sources": ["customanimations.scss"],
+"names": [],
+"file": "customanimations.css"
+}

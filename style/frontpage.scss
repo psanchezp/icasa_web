@@ -1,0 +1,106 @@
+@import 'base';
+@import 'animations/customanimations';
+
+@mixin background($url, $color) {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url($url);
+  background-color: $color;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+@mixin center {
+  display: inline-grid;
+  align-items: center;
+}
+
+body {
+  grid-template-rows: 10vh 320px auto;
+}
+
+.content {
+  padding: 0;
+}
+
+.frontpage-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-template-rows: auto;
+}
+
+.content {
+  grid-row: 3;
+  grid-column: header-start / header-end;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 15vw auto 15vw;
+
+  .text-section {
+    grid-column: 2;
+
+    p {
+      line-height: 2.5em;
+    }
+  }
+
+  .image-section {
+    grid-column: 2;
+    display: grid;
+  }
+}
+
+.section-link {
+  z-index: 9999;
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -o-fit-content;
+  width: -ms-fit-content;
+  justify-self: center;
+}
+
+
+#video-1, #video-2, #video-3 {
+  filter: brightness(50%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#item-1, #item-2, #item-3 {
+  color: $light;
+  @include center;
+}
+
+// #item-1 {
+//   color: $light;
+//   @include background('../images/wheat.jpg', ghostwhite);
+//   @include center;
+// }
+
+// #item-2 {
+//   color: $light;
+//   @include background('../images/corn.jpeg', darkgray);
+//   @include center;
+// }
+
+// #item-3 {
+//   color: $light;
+//   @include background('../images/chemistry.jpeg', ghostwhite);
+//   @include center;
+// }
+
+
+@media (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-rows: 10vh auto;
+    grid-template-columns: [header-start] auto [header-end];
+    grid-row-gap: 10px;
+    align-items: strech;
+  }
+}

@@ -1,0 +1,42 @@
+@import 'base';
+@import 'animations/customanimations';
+
+@mixin background($url, $color) {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url($url);
+  background-color: $color;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.text-section {
+  grid-column: 2;
+}
+
+.banner {
+  grid-row: 2;
+  @include background('../images/business.jpg', darkgray);
+  grid-column: header-start / header-end;
+
+  color: $light;
+
+  h1 {
+    padding: 100px 0 0 70px;
+    margin-bottom: 0px;
+  }
+
+  h1.less-padding-top {
+    padding: 50px 0 0 70px;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    padding: 0 0 0 70px;
+    margin-top: 0px;
+  }
+
+  .thin {
+    letter-spacing: 5px;
+    font-size: 32px;
+  }
+}

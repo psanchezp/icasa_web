@@ -1,0 +1,131 @@
+@import 'base';
+@import 'animations/customanimations';
+
+@mixin background($url, $color) {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url($url);
+  background-color: $color;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+body {
+  grid-template-rows: 106px 55vh auto;
+}
+
+header {
+  grid-row: 1;
+}
+
+#food-banner {  
+  @include background('../images/fruits.jpeg', darkgray);
+}
+
+#chemistry-banner {
+  @include background('../images/chemistry3.jpg', darkgray);
+}
+
+#representation-banner {
+    @include background('../images/bridge.jpg', darkgray);
+}
+
+.banner {
+  grid-row: 2;
+  grid-column: header-start / header-end;
+
+  color: $light;
+
+  h1 {
+    padding: 100px 0 0 70px;
+    margin-bottom: 0px;
+  }
+
+  h1.less-padding-top {
+    padding: 50px 0 0 70px;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    padding: 0 0 0 70px;
+    margin-top: 0px;
+  }
+
+  .thin {
+    letter-spacing: 5px;
+    font-size: 32px;
+  }
+}
+
+#small-banner-adiwheat {
+  background: $lightbrown;
+
+  img {
+    top: 5px;
+  }
+
+  h1 {
+    bottom: 55px;
+  }
+}
+
+#small-banner-adicorn {
+  background: $green;
+
+  img {
+    top: 10px;
+  }
+
+  h1 {
+    bottom: 45px;
+  }
+}
+
+.small-banner {
+  height: 210px;
+  grid-column: 1 / 4;
+
+  img, h1 {
+    display: inline;
+  }
+
+  img {
+    position: relative;
+    left: 15vw;
+  }
+
+  h1 {
+    position: relative;
+    left: 17vw;
+    margin: 0;
+    font-size: 64pt;
+    font-weight: 700;
+
+    span {
+      font-weight: 200;
+    }
+  }
+
+  color: $light;
+}
+
+.content {
+  grid-row: 3;
+  grid-column: header-start / header-end;
+
+  .text-section {
+    grid-column: 2;
+    color: $dark;
+
+    p {
+      font-size: 18pt;
+      line-height: 2.5em;
+    }
+  }
+}
+
+.image-div {
+  img {
+    height: 150px;
+    width: auto;
+  }
+}
