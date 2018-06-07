@@ -16,4 +16,9 @@ $(function (){
       var video = $(this).get(0);
       video.pause();
     });
+
+  $(".grid-item").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+  });
 });

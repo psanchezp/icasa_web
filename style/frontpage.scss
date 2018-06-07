@@ -19,10 +19,12 @@ body {
 }
 
 .content {
+  margin-top: 75px;
   padding: 0;
 }
 
 .frontpage-sections {
+  margin-top: 55px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
@@ -65,10 +67,6 @@ body {
 #video-1, #video-2, #video-3 {
   filter: brightness(50%);
   position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 100%;
-  min-height: 100%;
 }
 
 #item-1, #item-2, #item-3 {
