@@ -126,3 +126,13 @@ body {
     width: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .image-div {
+    display: none !important;
+  }
+
+  .accordion-body p {
+    grid-column: 1 / 4 !important;
+  }
+}
