@@ -41,7 +41,7 @@ header {
   color: $dark;
 
   display: inline-grid;
-  grid-template-columns: 5vw 25vw auto 25vw 5vw;
+  grid-template-columns: 5vw 25vw auto 45vw 5vw;
   align-items: center;
 
   div.first {
@@ -159,6 +159,10 @@ footer {
       color: $brown;
       grid-column: 1;
     }
+
+    h2.longer-text {
+      grid-column: 1/3;
+    }
   }
 
   .accordion-body {
@@ -171,6 +175,8 @@ footer {
 
     .image-div {
       grid-column: 1;
+      font-size: 18pt;
+      margin: 1em 0px;
     }
 
     p {

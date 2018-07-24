@@ -64,7 +64,7 @@ header {
   }
 
   h1 {
-    bottom: 55px;
+    bottom: 13px;
   }
 }
 
@@ -76,12 +76,12 @@ header {
   }
 
   h1 {
-    bottom: 45px;
+    bottom: 13px;
   }
 }
 
 .small-banner {
-  height: 210px;
+  height: 80px;
   grid-column: 1 / 4;
 
   img, h1 {
@@ -89,6 +89,7 @@ header {
   }
 
   img {
+    height: 80%;
     position: relative;
     left: 15vw;
   }
@@ -97,7 +98,7 @@ header {
     position: relative;
     left: 17vw;
     margin: 0;
-    font-size: 64pt;
+    font-size: 24pt;
     font-weight: 700;
 
     span {

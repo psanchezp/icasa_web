@@ -13,6 +13,12 @@
   grid-column: 2;
 }
 
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
 .banner {
   grid-row: 2;
   @include background('../images/business.jpg', darkgray);
