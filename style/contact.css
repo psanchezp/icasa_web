@@ -218,13 +218,11 @@ ul {
 div.grid-item:hover {
   filter: brightness(150%); }
 
+body {
+  grid-template-rows: 106px auto 80px; }
+
 .text-section {
   grid-column: 2; }
-
-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%; }
 
 .banner {
   grid-row: 2;

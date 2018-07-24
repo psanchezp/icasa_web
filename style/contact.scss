@@ -9,14 +9,12 @@
   background-position: center center;
 }
 
-.text-section {
-  grid-column: 2;
+body {
+  grid-template-rows: 106px auto 80px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+.text-section {
+  grid-column: 2;
 }
 
 .banner {
