@@ -323,7 +323,7 @@ body {
   .image-div {
     display: none !important; }
 
-  .accordion-body p {
+  .accordion .accordion-body p {
     grid-column: 1 / 4 !important; } }
 
 /*# sourceMappingURL=seccion.css.map */
