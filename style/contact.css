@@ -20,6 +20,7 @@ body {
 
 header {
   grid-column: header-start / header-end;
+  grid-row: 1;
   background-color: #FEFEFE;
   color: #333;
   display: inline-grid;
@@ -175,6 +176,11 @@ ul {
   ul li {
     list-style-type: none; }
 
+@media (max-width: 1015px) {
+  header {
+    grid-template-columns: 5vw 25vw 65vw 5vw; }
+    header div.second {
+      grid-column: 3; } }
 .text-center {
   text-align: center; }
 
@@ -227,6 +233,9 @@ div.grid-item:hover {
 
 body {
   grid-template-rows: 106px auto auto 80px; }
+
+.content {
+  grid-row: 3; }
 
 .text-section {
   grid-column: 2; }

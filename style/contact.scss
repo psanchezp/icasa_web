@@ -13,6 +13,10 @@ body {
   grid-template-rows: 106px auto auto 80px;
 }
 
+.content {
+  grid-row: 3;
+}
+
 .text-section {
   grid-column: 2;
 }

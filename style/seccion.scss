@@ -13,10 +13,6 @@ body {
   grid-template-rows: 106px 55vh auto;
 }
 
-header {
-  grid-row: 1;
-}
-
 #food-banner {  
   @include background('../images/fruits.jpeg', darkgray);
 }
