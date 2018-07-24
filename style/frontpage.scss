@@ -26,6 +26,7 @@ body {
 .frontpage-sections {
   margin-top: 55px;
   display: grid;
+  grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-template-rows: auto;
@@ -54,7 +55,7 @@ body {
 }
 
 .section-link {
-  z-index: 9999;
+  z-index: 9997;
   width: fit-content;
   width: -moz-fit-content;
   width: -webkit-fit-content;

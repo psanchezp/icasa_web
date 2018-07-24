@@ -46,7 +46,7 @@ header {
 
   div.first {
     grid-column: 2;
-    z-index: 9999;
+    z-index: 9998;
     background: $light;
     padding: 0px 20px 0px 20px;
     width: fit-content;
@@ -83,6 +83,13 @@ header {
   }
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+
 .grid-item {
   text-align: center;
 }
@@ -97,6 +104,7 @@ footer {
   color: $light;
   background: $lightbrown;
   grid-column: header-start / header-end;
+  grid-row: 4;
   margin-top: 40px;
 
   .footer-text {
