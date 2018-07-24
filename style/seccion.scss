@@ -127,7 +127,17 @@ body {
   }
 }
 
+@media (max-width: 820px) {
+  .banner-text {
+    font-size: 3em; 
+  }
+}
+
 @media (max-width: 600px) {
+  .banner-text {
+    font-size: 2em; 
+  }
+
   .image-div {
     display: none !important;
   }
